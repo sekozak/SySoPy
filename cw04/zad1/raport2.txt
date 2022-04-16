@@ -1,0 +1,72 @@
+----- WNIOSKI -----
+
+--- FORK ---
+Proces potomny dziedziczy ustawienia dla:
+-ignore
+-handler
+-mask"
+
+Dla "pending" sygnał oczekujący
+w przodku nie jest widoczny w potomku.
+
+
+--- EXEC ---
+Proces potomny dziedziczy ustawienia dla:
+-ignore
+-mask
+-pending
+
+
+Przez fakt iz exec w przeciwienstwie do fork dziedziczy dla ustawienia "pending",
+sygnał oczekujący w przodku jest także widoczny w potomku.
+
+----------------------------------------------------------
+
+
+--- TESTS ---
+
+----- Test for FORK -----
+
+--- Step by step in ignore ---
+Try raise signal!
+Try raise signal in child!
+
+--- Step by step in handle ---
+Try raise signal!
+Event handler for 10 | PID: 354950 | PPID: 354944
+Try raise signal in child!
+Event handler for 10 | PID: 354951 | PPID: 354950
+
+--- Step by step in mask ---
+Try raise signal!
+Signal pending!
+Try raise signal in child!
+Signal pending in child process!
+
+--- Step by step in pending ---
+Try raise signal!
+Signal pending!
+We are in child process!
+Signal not pending in child process!
+
+
+
+----- Test for EXEC -----
+
+--- Step by step in ignore ---
+Try raise signal!
+We are in (exec) child process!
+Try raise signal in child!
+
+--- Step by step in mask ---
+Try raise signal!
+Signal pending!
+We are in (exec) child process!
+Try raise signal in child!
+Signal pending in child process!
+
+--- Step by step in pending ---
+Try raise signal!
+Signal pending!
+We are in (exec) child process!
+Signal pending in child process!

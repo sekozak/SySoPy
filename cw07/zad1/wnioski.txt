@@ -1,0 +1,9 @@
+M-dostawcy
+N-kucharzy
+
+Dla M,N<5, petla dostawcy trwa 8-10s, a kucharza 5-7s wiec kucharz szybiej napelni stol stol niz dostawca
+zdazy z niego zdejmowac wiec ograniczeniem czasowym beda dostawcy.
+
+Dla M,N>5, teraz ogarniczenim w programie bedzie efektywnosc pieca wiec kucharze beda tylko czekac z gotowa
+pizza i po 4-5s dawac ja na stol gdzie dostwacy tez beda czekac na kolejne pizze a nie pizza na nich przez
+co program troche przyspieszy do mozliwosci wyrobowych pieca.

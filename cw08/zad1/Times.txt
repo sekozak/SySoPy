@@ -1,0 +1,127 @@
+Wnioski: W metodzie numbers kazdy watek i tak musi przejsc przez cala tablice pikeli aby pozmieniac te
+    ktore naleza do jego przedzialu wiec zwiekszanie liczby watkow nie przyspiesza a zwalnia program,
+    poniewaz musimy poczekac az kazdy przejdzie przez wszystkie piksele.
+
+
+-------------------------------
+Method: numbers Threads:1 Size: 512x512
+thread:   0 | time:  5121 [μs]
+-------------------------------
+Total Time: 24388 [μs]
+-------------------------------
+
+-------------------------------
+Method: numbers Threads:1 Size: 2272x1704
+thread:   0 | time: 109217 [μs]
+-------------------------------
+Total Time: 127517 [μs]
+-------------------------------
+
+-------------------------------
+Method: numbers Threads:2 Size: 512x512
+thread:   0 | time:  1267 [μs]
+thread:   1 | time:  2091 [μs]
+-------------------------------
+Total Time: 18418 [μs]
+-------------------------------
+
+-------------------------------
+Method: numbers Threads:2 Size: 2272x1704
+thread:   0 | time: 200707 [μs]
+thread:   1 | time: 210146 [μs]
+-------------------------------
+Total Time: 237422 [μs]
+-------------------------------
+
+-------------------------------
+Method: numbers Threads:4 Size: 512x512
+thread:   0 | time:   926 [μs]
+thread:   1 | time:  1284 [μs]
+thread:   2 | time:  9977 [μs]
+thread:   3 | time: 13913 [μs]
+-------------------------------
+Total Time: 48582 [μs]
+-------------------------------
+
+-------------------------------
+Method: numbers Threads:4 Size: 2272x1704
+thread:   0 | time: 446335 [μs]
+thread:   1 | time: 517617 [μs]
+thread:   2 | time: 533040 [μs]
+thread:   3 | time: 525517 [μs]
+-------------------------------
+Total Time: 546544 [μs]
+-------------------------------
+
+-------------------------------
+Method: numbers Threads:8 Size: 512x512
+thread:   0 | time:  1499 [μs]
+thread:   1 | time:  1401 [μs]
+thread:   2 | time:  7292 [μs]
+thread:   3 | time: 21732 [μs]
+thread:   4 | time: 11488 [μs]
+thread:   5 | time: 76200 [μs]
+thread:   6 | time: 33528 [μs]
+thread:   7 | time: 46355 [μs]
+-------------------------------
+Total Time: 108672 [μs]
+-------------------------------
+
+-------------------------------
+Method: numbers Threads:8 Size: 2272x1704
+thread:   0 | time: 683590 [μs]
+thread:   1 | time: 729447 [μs]
+thread:   2 | time: 833384 [μs]
+thread:   3 | time: 831697 [μs]
+thread:   4 | time: 860687 [μs]
+thread:   5 | time: 845440 [μs]
+thread:   6 | time: 825049 [μs]
+thread:   7 | time: 626803 [μs]
+-------------------------------
+Total Time: 890515 [μs]
+-------------------------------
+
+-------------------------------
+Method: numbers Threads:16 Size: 512x512
+thread:   0 | time:  3026 [μs]
+thread:   1 | time:   982 [μs]
+thread:   2 | time:  1220 [μs]
+thread:   3 | time:  8370 [μs]
+thread:   4 | time:  6337 [μs]
+thread:   5 | time: 13117 [μs]
+thread:   6 | time:  6508 [μs]
+thread:   7 | time: 12237 [μs]
+thread:   8 | time: 20602 [μs]
+thread:   9 | time: 84580 [μs]
+thread:  10 | time:  7564 [μs]
+thread:  11 | time: 50291 [μs]
+thread:  12 | time: 43886 [μs]
+thread:  13 | time: 22808 [μs]
+thread:  14 | time: 16573 [μs]
+thread:  15 | time: 15823 [μs]
+-------------------------------
+Total Time: 132308 [μs]
+-------------------------------
+
+-------------------------------
+Method: numbers Threads:16 Size: 2272x1704
+thread:   0 | time: 1144536 [μs]
+thread:   1 | time: 1235771 [μs]
+thread:   2 | time: 1479042 [μs]
+thread:   3 | time: 1467340 [μs]
+thread:   4 | time: 1482510 [μs]
+thread:   5 | time: 1533677 [μs]
+thread:   6 | time: 1407004 [μs]
+thread:   7 | time: 1487234 [μs]
+thread:   8 | time: 1481779 [μs]
+thread:   9 | time: 1466850 [μs]
+thread:  10 | time: 1405797 [μs]
+thread:  11 | time: 1437068 [μs]
+thread:  12 | time: 1376689 [μs]
+thread:  13 | time: 1432736 [μs]
+thread:  14 | time: 1313878 [μs]
+thread:  15 | time: 1149256 [μs]
+-------------------------------
+Total Time: 1616576 [μs]
+-------------------------------
+

@@ -1,3 +1,4 @@
+## Wątki - podstawy
 Rozważmy obraz monochromatyczny w formacie ASCII PGM (Portable Gray Map) reprezentowany jako macierz o wymiarach nxm, w którym każdy element jest liczbą całkowitą z zakresu od 0 do 255.  Zaimplementuj oparty na wątkach program generujący współbieżnie negatyw obrazu podanego na wejściu. Przez negatyw rozumiemy obraz w którym wartość piksela ij wyznaczana jest jako 255 – p gdzie p to wartość tego piksela w obrazie wejściowym
 
 # Program należy zaimplementować w dwóch wariantach ze względu na podział zadania:

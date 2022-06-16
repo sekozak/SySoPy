@@ -1,0 +1,4 @@
+skladnik0 = cat /etc/passwd | echo hello
+skladnik1 = ls | grep 'a' | echo world
+skladnik0
+skladnik0 | skladnik1

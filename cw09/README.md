@@ -1,3 +1,4 @@
+## Wątki - metody synchronizacji
 # W ramach zadania należy zaimplementować rozwiązanie problemu Świętego Mikołaja.
 Święty Mikołaj śpi w swoim warsztacie na biegunie północnym i może być obudzony tylko w 2 sytuacjach:
 1) wszystkie 9 reniferów wróciło z wakacji,

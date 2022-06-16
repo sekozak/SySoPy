@@ -1,10 +1,10 @@
 Rozważmy obraz monochromatyczny w formacie ASCII PGM (Portable Gray Map) reprezentowany jako macierz o wymiarach nxm, w którym każdy element jest liczbą całkowitą z zakresu od 0 do 255.  Zaimplementuj oparty na wątkach program generujący współbieżnie negatyw obrazu podanego na wejściu. Przez negatyw rozumiemy obraz w którym wartość piksela ij wyznaczana jest jako 255 – p gdzie p to wartość tego piksela w obrazie wejściowym
 
-Program należy zaimplementować w dwóch wariantach ze względu na podział zadania:
+# Program należy zaimplementować w dwóch wariantach ze względu na podział zadania:
 
-# Wariant 1: Każdy wątek wyznacza wartości pikseli obrazu wyjściowego tylko dla tych pikseli obrazu wejściowego które przyjmują wartości z określonego zbioru/przedziału wartości. Zbiór liczb dla wątku można przydzielić w dowolny sposób, ale taki, by każdy wątek dostał inne liczby i zadanie było podzielone równo na wszystkie wątki. (50%)
+Wariant 1: Każdy wątek wyznacza wartości pikseli obrazu wyjściowego tylko dla tych pikseli obrazu wejściowego które przyjmują wartości z określonego zbioru/przedziału wartości. Zbiór liczb dla wątku można przydzielić w dowolny sposób, ale taki, by każdy wątek dostał inne liczby i zadanie było podzielone równo na wszystkie wątki. (50%)
 
-# Wariant 2: Podział blokowy – k-ty wątek oblicza wartości pikseli w pionowym pasku o współrzędnych x-owych w przedziale od (𝑘−1)∗ceil(𝑁/𝑚) do 𝑘∗ceil(𝑁/𝑚)−1, gdzie 𝑁 to szerokość obrazu wejściowego a 𝑚 to liczba stworzonych wątków. (30%)
+Wariant 2: Podział blokowy – k-ty wątek oblicza wartości pikseli w pionowym pasku o współrzędnych x-owych w przedziale od (𝑘−1)∗ceil(𝑁/𝑚) do 𝑘∗ceil(𝑁/𝑚)−1, gdzie 𝑁 to szerokość obrazu wejściowego a 𝑚 to liczba stworzonych wątków. (30%)
 
 Program przyjmuje następujące argumenty:
 

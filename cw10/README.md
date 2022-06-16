@@ -1,3 +1,4 @@
+## Sockety
 # Celem zadania jest napisanie prostego systemu pozwalającego na granie w kółko i krzyżyk w architekturze klient/serwer.
 
 Serwer nasłuchuje jednocześnie na gnieździe sieciowym i gnieździe lokalnym.

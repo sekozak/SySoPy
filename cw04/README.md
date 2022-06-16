@@ -1,3 +1,4 @@
+## Sygnały
 # Zadanie 1 (30%)
 Napisz program demonstrujący, czy ustawienia dyspozycji dla sygnałów, ich maski oraz czekające sysgnały są dziedziczone po wykonaniu funkcji fork oraz exec.
 W szczególności eksperymenty proszę wykonać dla sygnału SIGUSR1 w następujący sposób:

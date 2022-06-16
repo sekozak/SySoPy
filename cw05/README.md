@@ -4,12 +4,12 @@ Napisz interpreter poleceń przechowywanych w pliku. Ścieżka do pliku to pierw
 
 Polecenia w pliku przechowywane  w następującej postaci: 
 
-# Definicja składników
+## Definicja składników
 składnik1 = prog1 arg1 ... argn1 | prog2 arg1 ... argn2 | ... | progN arg1 ... argnN
 składnik2 = prog1 arg1 ... argn1 | prog2 arg1 ... argn2 | ... | progM arg1 ... argnM
 ...
 składnikK = prog1 arg1 ... argn1 | prog2 arg1 ... argn2 | ... | progZ arg1 ... argnZ
-# Wykonanie potoku
+## Wykonanie potoku
 składnik1 | składnik2 | składnikK
 
 Przykład

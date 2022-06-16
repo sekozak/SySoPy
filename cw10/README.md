@@ -1,4 +1,4 @@
-Celem zadania jest napisanie prostego systemu pozwalającego na granie w kółko i krzyżyk w architekturze klient/serwer.
+# Celem zadania jest napisanie prostego systemu pozwalającego na granie w kółko i krzyżyk w architekturze klient/serwer.
 
 Serwer nasłuchuje jednocześnie na gnieździe sieciowym i gnieździe lokalnym.
 Klienci po uruchomieniu przesyłają do serwera swoją nazwę, a ten sprawdza czy klient o takiej nazwie już istnieje - jeśli tak, to odsyła klientowi komunikat że nazwa jest już w użyciu; jeśli nie, to zapamiętuje klienta.
